@@ -1,0 +1,284 @@
+body{
+    overflow-x: hidden;
+}
+.card  {
+    border-radius: 5px;
+}
+i.hov{
+background-color: rgb(118, 173, 255);
+
+
+}
+i.foot:hover{
+    background-color: #2cafe3;
+    transition: color 0.5s;
+}
+ i.fa-check:hover{
+     background-color: #31aae1;
+     color: white;
+ }
+
+i.fab{
+    padding: 0.6em;
+    background-color: #35a9e6;
+    color: white;   
+}
+
+li i.fa-search , i.fa-cart-arrow-down{
+    padding: 0.5em;
+    color: darkcyan;
+}
+
+
+li i.fa-search , i.fa-cart-arrow-down:hover{
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+
+nav.navbar.navbar-expand-sm.navbar-dark.mb-3{
+    border-bottom: 1px solid rgb(240, 184, 184) ;
+}
+i.hov{
+    max-height: 48px;
+}
+i.hov:hover{
+    background-color: rgb(224, 232, 247) ;
+    border: 1px solid;    
+    transition: background-color 0.5s;
+}
+#topsec{
+    background: url("./img/better/1.jpg");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav{
+    border-bottom:1px darkblue;
+}
+
+#topsec .overlayI{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background-image:  linear-gradient(to left, #f77b7b, #e6855a, #d79038, #d29b26, #d3a722);
+    opacity: 70%;
+    
+}
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Mono'), url('./fonts/roboto-mono/RobotoMono-Regular.ttf') format('woff');
+    }
+    @font-face {
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: normal;
+        src: local(Merriweather), url('./fonts/roboto-mono/RobotoMono-Regular.ttf') format('woff');
+        }
+#blog p .container .row .blog{
+    color:white;
+
+}
+@font-face {
+        font-family: Lobster;
+        font-style: normal;
+        font-weight: normal;
+        src: local(Lobster), url('./fonts/lobster/The-Lobster-Font/fonts/TTF/Lobster.ttf') format('woff');
+        }
+p.h3{
+    font-family: Merriweather;
+}        
+p.h2{
+    font-family: 'Roboto Mono';
+}    
+#middle{
+    background: url("./img/freedomWings.jpeg");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+#middle #overlay  {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background : rgba(224, 86, 144, 0.9);
+}
+#wordpress{
+    background-color:#ffd37a;
+}
+
+
+
+#id #video-bar {
+  position: relative;
+  min-height: 200px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  background-position: 0 300px;
+}
+#id #video-bar .dark-overlay .row {
+  max-width: 1349px;
+}
+
+
+
+
+
+
+ody {
+    min-height: 100vh;
+    background: #fafafa;
+}
+
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+i.footerIcon{
+    background-color: #4a4a4a;
+
+    
+}
+
+i.footerIcon:hover{
+    
+    background-color: #31aadf;
+    color: white;
+    transition: background-color 0.5s;
+    
+}
+
+#triav::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 20px solid rgb(255, 255, 255);
+    border-bottom: 15px solid transparent;    
+    position: absolute;
+    left: 89.6%;
+    top: 10%;
+    /* top: 0; */
+}
+
+#tria1::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 20px solid rgb(255, 255, 255);
+    border-bottom: 15px solid transparent;    
+    position: absolute;
+    left: 89.6%;
+    top: 10%;
+    /* top: 0; */
+    
+}
+#tria2::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 20px solid rgb(255, 255, 255);
+    border-bottom: 15px solid transparent;    
+    position: absolute;
+    left: 89.6%;
+    top: 10%;
+    /* top: 0; */
+    
+}
+#tria3::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 20px solid rgb(255, 255, 255);
+    border-bottom: 15px solid transparent;    
+    position: absolute;
+    left: 89.6%;
+    top: 10%;
+    /* top: 0; */
+    
+}
+
+/* #gallery{
+    background-color: red;
+    height: 100px;
+    position: relative;
+    width: 20px;
+} */
+
+#gallery:hover::after{
+    content: '';
+    
+    background-color: silver;
+    height: 1px;
+    width: 100px;
+    left: 700%;
+    top: 50%;
+    position: absolute;
+    transition: background-color 0.5s;
+
+}
+
+.card .card-body:hover{
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+
+#gal:hover::after{
+    content: '';
+    
+    background-color: silver;
+    height: 100px;
+    width: 1px;
+    left: 1000%;
+    top: 35%;
+    position: absolute;
+    transition: background-color 0.5s;
+}
+
+.progress {
+    height: 10px;
+}
+
+
+.carousel-indicators {
+    position: static;
+  
+  .item {
+    
+    &.active {
+      background: transparent;
+      
+      img {
+        opacity: 0.7;
+      }
+    }
+  }
+}
