@@ -1,3 +1,103 @@
+body::-webkit-scrollbar{
+  width: 0.8em;
+  
+}
+
+body::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 3px #f2846d; 
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color:darkgrey;
+  border-radius: 50px;
+  outline: 1px solid #f2846d;
+}
+
+
+
+
+
+@font-face {
+font-family: 'SEGA LOGO FONT';
+font-style: normal;
+font-weight: normal;
+src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+
+
+
+
+
+
+
+#loading{
+  
+  background-image: url('./gif-animations-replace-loading-screen-14.gif');
+  background-size: 80vw;
+  font-family: 'SEGA LOGO FONT';
+  display: block;
+  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  color: #0ccac4;
+}
+
+
+#return-to-top {
+    position: fixed;
+    top: 80%;
+    right: 95%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 19px;
+    top: 15px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+
+
+
+
+
+
+
 body {
   overflow-x: hidden;
 }
@@ -27,7 +127,7 @@ li i.fa-search,
 i.fa-cart-arrow-down {
   padding: 0.5em;
   color: darkcyan;
-  https: ; //cdn.pixabay.com/photo/2019/11/08/11/56/cat-4611189_960_720.jpgr:
+  
 }
 
 li i.fa-search,
@@ -41,11 +141,14 @@ nav.navbar.navbar-expand-sm.navbar-dark.mb-3 {
 }
 i.hov {
   max-height: 48px;
+  transition: all 0.5s;
 }
 i.hov:hover {
   background-color: rgb(224, 232, 247);
-  border: 1px solid;
-  transition: background-color 0.5s;
+   border: 2px solid #33aae2; 
+  /* transition: all 0.5s; */
+  box-shadow: 0 10px 10px grey;
+  
 }
 #topsec {
   background: url("./img/better/1.jpg");
@@ -63,7 +166,7 @@ nav {
   left: 0;
   width: 100%;
 
-  background-image: linear-gradient(to left, #f77b7b, #e6855a, #d79038, #d29b26, #d3a722);
+  background-image: linear-gradient(to right, #f77b7b, #e6855a, #d79038, #d29b26, #d3a722);
   opacity: 70%;
 }
 @font-face {
@@ -149,7 +252,11 @@ ody {
   color: #555;
 }
 i.footerIcon {
+  
   background-color: #4a4a4a;
+}
+i.footerIconRight:hover{
+  color: white !important;
 }
 
 i.footerIcon:hover {
@@ -185,7 +292,7 @@ i.footerIcon:hover {
   border-right: 20px solid rgb(255, 255, 255);
   border-bottom: 15px solid transparent;
   position: absolute;
-  
+
 /* #gallery{
     background-color: red;
     height: 100px;

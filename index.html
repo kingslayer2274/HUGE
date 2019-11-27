@@ -22,10 +22,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
     <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     -->
+    <script >
+        function onReady(callback){
+            var intervalId=window.setInterval(function(){
+                if(document.getElementsByTagName('body')[0]!==undefined){
+                    window.clearInterval(intervalId);
+                    callback.call(this);
+                }
+            },1000)
+        }
+        function setVisible(selector,visible){
+            document.querySelector(selector).style.display =visible ? 'block' :'none';
+        }
+        onReady(function(){
+            setVisible('.page',true);
+            setVisible('#loading',false);
+        })
+    </script>
 
     <title>Theme #1</title>
 </head>
 <body>
+
+
+
+
+
+
+
+
+<div id="loading">
+    <div class="center">
+        LOADING
+    </div>
+    
+
+</div>
+<div class="page">
+
+
+
+
+    <a href="javascript:" id="return-to-top">
+        <i class="fa fa-angle-double-up   "></i>
+    </a>
+
+
  <!-- NAVBAR -->
  <section id="topsec">
  <div class="overlayI">
@@ -589,7 +631,7 @@
                                 <button class="btn btn-primary" style="position: absolute; z-index: 2; margin-left: 11.7em; margin-top: 19em;font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 1.1em;">
                                         purchase
                                     </button> -->
-                            <img class="img img-fluid mb-4 " style="position: relative;" src="./images/user1.png" alt="phone">
+                            <img class="img img-fluid mb-4 " style="position: relative;" src="./img/user1.png" alt="phone">
 
                         </div>
                         <div class="col-md-4">
@@ -1553,7 +1595,7 @@
             <div class="col-md-5 mt-5  text-center">
                     <div  class="text-center   d-inline-block ml-2">
                             <p class="m-0 " >
-                                <i class="text-secondary fab fa-facebook-f  footerIcon p-3 rounded-circle"></i>
+                                <i class="text-secondary fab fa-facebook-f  footerIcon footerIconRight p-3 rounded-circle"></i>
                                 
                             </p>
                             <small class="text-muted">
@@ -1564,7 +1606,7 @@
                         </div>
                         <div  class="text-center   d-inline-block ml-2">
                                 <p class="m-0" >
-                                    <i class="text-muted fab fa-twitter  footerIcon p-3 rounded-circle"></i>
+                                    <i class="text-muted fab fa-twitter footerIconRight  footerIcon p-3 rounded-circle"></i>
                                     
                                 </p>
                                 
@@ -1575,7 +1617,7 @@
                         </div> 
                         <div  class="text-center   d-inline-block ml-2">
                                 <p class="m-0" >
-                                    <i class="text-secondary fab fa-google-plus-g  footerIcon p-3 rounded-circle"></i>
+                                    <i class="text-secondary footerIconRight fab fa-google-plus-g  footerIcon p-3 rounded-circle"></i>
                                     
                                 </p>
                                 
@@ -1586,7 +1628,7 @@
                         </div>
                         <div  class="text-center   d-inline-block ml-2">
                                 <p class="m-0" >
-                                    <i class="fab text-muted fa-dribbble  p-3 footerIcon rounded-circle"></i>
+                                    <i class="fab footerIconRight text-muted fa-dribbble  p-3 footerIcon rounded-circle"></i>
                                     
                                 </p>
                                 
@@ -1596,8 +1638,8 @@
                                 
                         </div> 
                         <div  class="text-center   d-inline-block ml-2">
-                                <p class="m-0" >
-                                    <i class="fab fa-tumblr text-muted  p-3 footerIcon rounded-circle"></i>
+                                <p class="m-0 " >
+                                    <i class="fab footerIconRight fa-tumblr text-muted  p-3 footerIcon rounded-circle"></i>
                                     
                                 </p>
                                 
@@ -1875,7 +1917,7 @@
                                                     <i class="fab text-muted p-2 foot  fa-pinterest"style="background-color:#2d2d2d"></i>
                                             </a>
                                             <a href="#">
-                                                    <i class="fab text-muted p-2 foot  fa-apple"style="background-color:#2d2d2d"></i>
+                                                    <i class=" fab text-muted p-2 foot  fa-apple"style="background-color:#2d2d2d"></i>
                                             </a>
                                            
                                         </div>
@@ -1974,6 +2016,8 @@
 </footer>
 
 
+</div>
+
       
         
 
@@ -2010,14 +2054,9 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"
   ></script>
-<<<<<<< HEAD
   
   
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-=======
- 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
->>>>>>> b00527170a3fa0305ceca2b3d55f39964f915aa3
   crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -2025,12 +2064,33 @@
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
   crossorigin="anonymous"></script>
-<<<<<<< HEAD
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
-=======
- <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
- 
->>>>>>> b00527170a3fa0305ceca2b3d55f39964f915aa3
+
+<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+
+
+
+
+
+<script>
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()>=50){
+            $('#return-to-top').fadeIn(200);
+        }else{
+            $('#return-to-top').fadeOut(200);
+        }
+    })
+    $('#return-to-top').click(function(){
+        $('body,html').animate({
+            scrollTop:0
+        },500)
+    })
+
+
+</script>
+
+
 <script>
   $('body').scrollspy({ target: '#main-nav' });
 
@@ -2038,7 +2098,7 @@
   $('#main-nav a').on('click', function (e) {
     // Check for a hash value
     if (this.hash !== '') {
-      // Prevent default behavior
+      // Prevent default behavior   
       e.preventDefault();
 
       // Store hash
