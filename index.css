@@ -1,3 +1,57 @@
+
+.spinner-wave-in{
+	display: block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 3.125px solid #aaa;
+	animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Dots */
+
+
+.spinner-wave-in {
+	box-shadow: inset -1.5625px -1.5625px 0 1.5625px tomato;
+}
+
+.spinner-section-far:after {
+	display: none;
+}
+
+/* --- */
+
+.loadercontainer {
+	width: 360px;
+	margin: 6em 13em;
+}
+
+span {
+	margin: 10px;
+}
+
+span:nth-child(4n+1) {
+	clear: both;
+}
+
+
+
+
+
+
+
+
 body::-webkit-scrollbar{
   width: 0.8em;
   
@@ -32,8 +86,8 @@ src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
 
 #loading{
   
-  background-image: url('./gif-animations-replace-loading-screen-14.gif');
-  background-size: 80vw;
+  background-image: linear-gradient(to left, #051937, #3e205b, #850464, #c5004c, #eb1212);
+  
   font-family: 'SEGA LOGO FONT';
   display: block;
   font-size: 48px;
@@ -42,7 +96,7 @@ src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
   left: 0;
   z-index: 100;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   color: #0ccac4;
 }
 
@@ -50,7 +104,8 @@ src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
 #return-to-top {
     position: fixed;
     top: 80%;
-    right: 95%;
+    right: 90%;
+    z-index: 9999;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
     width: 50px;
@@ -95,7 +150,16 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 
 
 
-
+p.logo{
+  text-transform: uppercase;
+  border: 2px solid white;
+  color: white;
+  font-size:18px;
+  font-weight: bold;
+  
+  padding:7px 20px;
+  display: inline-block;
+}
 
 
 body {
@@ -282,6 +346,9 @@ i.footerIcon:hover {
 
 #triav{
      clip-path: polygon(0 0 ,100% 0 , 100% 10% , 95% 15% , 100% 20% , 100% 100% , 0 100%);
+}
+#triav:hover{
+  cursor: pointer;
 }
 /*
 #tria1::after {
