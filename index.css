@@ -146,11 +146,14 @@ src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
 
 
 /* Extra Things */
+html{
+  max-width: 100vw;
+}
 body{
   background:white ;font-family: 'Open Sans', sans-serif;
-  max-width:100%;
-  overflow-x: hidden !important;
 
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
 
 }
   h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
@@ -228,6 +231,8 @@ i.fa-cart-arrow-down:hover {
 nav.navbar.navbar-expand-sm.navbar-dark.mb-3 {
   border-bottom: 1px solid rgb(240, 184, 184);
   z-index:100;
+  width:100vw !important;
+  overflow-x:hidden !important  ;
   
   
 }
