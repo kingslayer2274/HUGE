@@ -19,12 +19,87 @@ function setVisible(selector,visible){
 }
 onReady(function(){
     setVisible('.page',true);
+
     setVisible('#loading',false);
     $('#loading').remove();
 })
 
 
 
+
+
+function loading(){
+    $(document).ready(function(){
+        return false;
+    })
+}
+
+function setVisible(selector,visible){
+    document.querySelector(selector).style.display =visible ? 'block' :'none';
+    
+        
+    
+}
+if(loading){
+    setVisible('.navbar',true);
+}else{
+    setVisible('.navbar',false)
+    
+}
+
+
+
+// NAVBAR
+
+
+$(window).scroll(function(){
+    if($(this).scrollTop()>590){
+         $('.fix').addClass('navscroll')
+    }else{
+        $('.fix').removeClass('navscroll')
+
+    }
+})
+
+
+
+
+$(window).scroll(function(){
+    if($(this).scrollTop()>2400){
+        $('.fix').addClass('navscrollII')
+        $('.fix').removeClass('navscroll')
+         
+    }else{
+        $('.fix').removeClass('navscrollII')
+
+    }
+})
+
+
+
+$(window).scroll(function(){
+    if($(this).scrollTop()>4820){
+        $('.fix').addClass('navscrollIII')
+        $('.fix').removeClass('navscrollII')
+         
+    }else{
+        $('.fix').removeClass('navscrollIII')
+
+    }
+})
+
+
+
+$(window).scroll(function(){
+    if($(this).scrollTop()>7070){
+        $('.fix').addClass('navscrollIV')
+        $('.fix').removeClass('navscrollII')
+         
+    }else{
+        $('.fix').removeClass('navscrollIV')
+
+    }
+})
 
 
 

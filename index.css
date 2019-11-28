@@ -33,8 +33,9 @@
 /* --- */
 
 .loadercontainer {
-	width: 360px;
-	margin: 6em 13em;
+  text-align: center;
+	top: 50vh;
+	
 }
 
 span {
@@ -94,7 +95,7 @@ src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 999;
   width: 100vw;
   height: 200vh;
   color: #0ccac4;
@@ -145,7 +146,30 @@ src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
 
 
 /* Extra Things */
-body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+body{
+  background:white ;font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+
+
+}
+  h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+
+
+
+
+.myCard{
+  border:1px solid white;
+  
+}
+
+.myCard img{
+  max-height: 240px;
+  max-width: 308px;
+
+}
+.myCard .card-body{
+  padding:0px;
+}
 
 
 
@@ -156,7 +180,7 @@ p.logo{
   color: white;
   font-size:18px;
   font-weight: bold;
-  
+  z-index: 999;
   padding:7px 20px;
   display: inline-block;
 }
@@ -202,17 +226,31 @@ i.fa-cart-arrow-down:hover {
 
 nav.navbar.navbar-expand-sm.navbar-dark.mb-3 {
   border-bottom: 1px solid rgb(240, 184, 184);
+  z-index:100;
+  
+  
 }
 i.hov {
-  max-height: 48px;
+  max-height: 50px;
+  max-width: 52px;
   transition: all 0.5s;
-}
-i.hov:hover {
-  background-color: rgb(224, 232, 247);
-   border: 2px solid #33aae2; 
-  /* transition: all 0.5s; */
-  box-shadow: 0 10px 10px grey;
+  backface-visibility: hidden;
+  padding: 1rem;
+  border: 2px solid #33aae2;
   
+}
+
+.hovcol:hover .hov{
+
+  
+
+  background-color: rgb(224, 232, 247);
+   border: 2px solid #33aae2;
+    
+  transition: all 0.5s;
+  /* box-shadow: 0 10px 10px grey; */
+  
+
 }
 #topsec {
   background: url("./img/better/1.jpg");
@@ -220,9 +258,6 @@ i.hov:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-nav {
-  border-bottom: 1px darkblue;
 }
 
 #topsec .overlayI {
@@ -397,15 +432,12 @@ i.footerIcon:hover {
   background-color: silver;
   height: 100px;
   width: 1px;
-  left: 1300%;
+  left: 1000%;
   top: 35%;
   position: absolute;
   transition: background-color 0.5s;
 }
 
-.card .card-body:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 
 #gal:hover::after {
   content: "";
@@ -434,5 +466,132 @@ i.footerIcon:hover {
         opacity: 0.7;
       }
     }
+  }
+}
+
+
+
+
+.navscroll{
+  
+  background-image: linear-gradient(to right, #f77b7b, #e6855a, #d79038, #d29b26, #d3a722);
+  opacity: 70%;
+
+  
+  transition: all 0.5s ease-in-out;
+  
+  
+}
+
+.navscrollII{
+  
+  background-color: #f77b7b;
+  opacity: 70%;
+
+  
+  transition: all 0.5s ease-in-out;
+  
+  
+}
+
+.navscrollIII{
+  
+  background-color: #d79038;
+  opacity: 70%;
+
+  
+  transition: all 0.5s ease-in-out;
+  
+  
+}
+
+
+.navscrollIV{
+  background-image: linear-gradient(to right , #74c8b8 ,#31aae1 ,#c183d6);
+
+  opacity: 70%;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 999999;
+}
+
+.loader-1 .loader-outter {
+  position: absolute;
+  border: 4px solid #f50057;
+  border-left-color: transparent;
+  border-bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
+  animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
+}
+
+.loader-1 .loader-inner {
+  position: absolute;
+  border: 4px solid #f50057;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  border-right: 0;
+  border-top-color: transparent;
+  -webkit-animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite;
+  animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite;
+}
+
+
+@-webkit-keyframes loader-1-outter {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-1-outter {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-1-inner {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+  }
+}
+
+@keyframes loader-1-inner {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
   }
 }
