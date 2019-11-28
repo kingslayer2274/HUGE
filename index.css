@@ -87,7 +87,7 @@ src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
 
 #loading{
   
-  background-image: linear-gradient(to left, #051937, #3e205b, #850464, #c5004c, #eb1212);
+  background-image: linear-gradient(to right, #f77b7b, #e6855a, #d79038, #d29b26, #d3a722);
   
   font-family: 'SEGA LOGO FONT';
   display: block;
