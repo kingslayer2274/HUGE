@@ -148,7 +148,8 @@ src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
 /* Extra Things */
 body{
   background:white ;font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
+  max-width:100%;
+  overflow-x: hidden !important;
 
 
 }
