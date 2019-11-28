@@ -197,7 +197,7 @@ body {
   border-radius: 5px;
 }
 i.hov {
-  background-color: rgb(118, 173, 255);
+  background-color: #33aae2;
 }
 
 i.foot:hover {
@@ -480,10 +480,11 @@ i.footerIcon:hover {
 
 .navscroll{
   
-  background-image: linear-gradient(to right, #f77b7b, #e6855a, #d79038, #d29b26, #d3a722);
+  /* background-image: linear-gradient(to right, #f77b7b, #e6855a, #d79038, #d29b26, #d3a722); */
+  background-color: rgba(255, 255, 255, 0.637);
   opacity: 70%;
+  box-shadow: 0 3px 6px silver;
 
-  
   transition: all 0.5s ease-in-out;
   
   
@@ -491,7 +492,7 @@ i.footerIcon:hover {
 
 .navscrollII{
   
-  background-color: #f77b7b;
+  background-image:linear-gradient(to right, #b2c3db ,#5b5454,#767271);
   opacity: 70%;
 
   
@@ -502,7 +503,7 @@ i.footerIcon:hover {
 
 .navscrollIII{
   
-  background-color: #d79038;
+  background-color: #f77b7b;
   opacity: 70%;
 
   
@@ -519,6 +520,13 @@ i.footerIcon:hover {
   transition: all 0.5s ease-in-out;
 }
 
+
+@media only screen and (max-width: 100px) {
+  nav#main-nav {
+    padding-top: 50px;
+    color:red !important;
+  }
+}
 
 .loader {
   position: relative;
