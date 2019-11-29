@@ -186,11 +186,9 @@ body{
 
 
 .pdd{
-<<<<<<< HEAD
   padding-top: 1.1rem;
-=======
-  padding-top: 2rem;
->>>>>>> 8e81e10f633d445c18e99956b20586c2ce4acf57
+  
+
 }
 p.logo{
   text-transform: uppercase;
@@ -251,8 +249,8 @@ nav.navbar.navbar-expand-sm.navbar-dark.mb-3 {
   
 }
 i.hov {
-  max-height: 50px;
-  max-width: 52px;
+  max-height: 54px;
+  max-width: 55px;
   transition: all 0.5s;
   backface-visibility: hidden;
   padding: 1rem;
