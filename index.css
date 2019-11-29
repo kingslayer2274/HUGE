@@ -186,7 +186,11 @@ body{
 
 
 .pdd{
+<<<<<<< HEAD
   padding-top: 1.1rem;
+=======
+  padding-top: 2rem;
+>>>>>>> 8e81e10f633d445c18e99956b20586c2ce4acf57
 }
 p.logo{
   text-transform: uppercase;
