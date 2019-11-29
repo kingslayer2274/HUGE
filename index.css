@@ -174,7 +174,14 @@ body{
 .myCard .card-body{
   padding:0px;
 }
+.btn-hov:hover{
+  background-color: #31aae1;
 
+}
+.btn-hov:hover i.fa-check{
+  color: white !important;
+
+}
 
 
 
