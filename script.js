@@ -52,21 +52,34 @@ if(loading){
 // NAVBAR
 
 
-$(window).scroll(function() {
-    var hT = $('#main').offset().top,
-        hH = $('#main').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-    if (wS > (hT+hH-wH)){
+
+$(window).scroll(function(){
+    var height = $(window).scrollTop();
+    if(height>50){
         $('.fix').addClass('navscroll')
-         $('.fix').addClass('navbar-light')
-         $('.fix').removeClass('navbar-dark')
+        $('.fix').addClass('navbar-light')
+        $('.fix').removeClass('navbar-dark')
     }else{
         $('.fix').removeClass('navscroll')
         $('.fix').removeClass('navbar-light')
         $('.fix').addClass('navbar-dark')
-    }
- });
+}})
+
+// $(window).scroll(function() {
+//     var hT = $('#main').offset().top,
+//         hH = $('#main').outerHeight(),
+//         wH = $(window).height(),
+//         wS = $(this).scrollTop();
+//     if (wS > (hT+hH-wH)){
+//         $('.fix').addClass('navscroll')
+//          $('.fix').addClass('navbar-light')
+//          $('.fix').removeClass('navbar-dark')
+//     }else{
+//         $('.fix').removeClass('navscroll')
+//         $('.fix').removeClass('navbar-light')
+//         $('.fix').addClass('navbar-dark')
+//     }
+//  });
 
 
  $(window).scroll(function() {
@@ -115,16 +128,47 @@ $(window).scroll(function() {
     }
  });
 
- $(window).scroll(function(){
-     var width = $(window).width();
-     if(width <600 ){
-         $('.fix').addClass('pt-5')
-     }else{
-         $('.fix').removeClass('pt-5')
-     }
- })
+//  $(window).scroll(function(){
+//      var width = $(window).width();
+//      if(width <600 ){
+//          $('.fix').addClass('pt-5')
+//      }else{
+//          $('.fix').removeClass('pt-5')
+//      }
+//  })
 
 
+ var position = $(window).scrollTop(); 
+
+// should start at 0
+
+$(window).scroll(function() {
+    
+    var scroll = $(window).scrollTop();
+    if(scroll > position) {
+        console.log("down")
+        $(window).scroll(function(){
+            var width = $(window).width();
+            if(width <600  ){
+                $('.fix').addClass('pt-5')
+            }else{
+                $('.fix').removeClass('pt-5')
+            }
+        })
+       
+    } else {
+        
+        $(window).scroll(function(){
+            $('.fix').removeClass('pt-5')
+        })
+        // $('.fix').css("margin-top","-30px")
+        
+        console.log("up")
+
+         
+    } 
+    position = scroll;
+});
 
 
 
