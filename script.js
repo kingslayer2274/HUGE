@@ -150,16 +150,16 @@ $(window).scroll(function() {
         $(window).scroll(function(){
             var width = $(window).width();
             if(width <600  ){
-                $('.fix').addClass('pt-5')
+                $('.fix').addClass('pdd')
             }else{
-                $('.fix').removeClass('pt-5')
+                $('.fix').removeClass('pdd')
             }
         })
        
     } else {
         
         $(window).scroll(function(){
-            $('.fix').removeClass('pt-5')
+            $('.fix').removeClass('pdd')
         })
         // $('.fix').css("margin-top","-30px")
         
